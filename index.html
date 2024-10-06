@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Łukasz Ciastoń</title>
+    <meta name="description" content="Łukasz Ciastoń">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/zyro-image.png" />
+
+    <link rel="stylesheet" href="css/modern-normalize.min.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mynerve&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Importowanie plików CSS i JavaScript dla slick-carousel -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+</head>
+
+<body>
+    <!--==== Navbar Start ====-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/00009999.png" alt="LukiPuki logo" />
+                    </a>
+                </div>
+                <div class="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Główna<span></span></a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">O firmie<span></span></a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">Projekty<span></span></a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Kontakt<span></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#home" class="mobile-menu__link">Home</a></li>
+                <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">About me</a></li>
+                <li class="mobile-menu__item"><a href="#project" class="mobile-menu__link">Project</a></li>
+                <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--==== Navbar End ====-->
+    <!--==== Main page====-->
+    <section id="home" class="home">
+        <div class="home__content container">
+            <h3>Hello, I'm</h3>
+            <h1>Łukasz Ciastoń</h1>
+            <h3>And I'm a <span class="home__multiple"></span></h3>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/%C5%82ukasz-ciasto%C5%84-0031b9276/"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/LukaszCiaston-coder"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="./images/CV Łukasz Ciastoń.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="home__animation">
+            <div class="home__image">
+                <img class="hero" src="images/4.jpg" alt="man with black and red shirt">
+                <div class="video-container">
+                    <video class="video" src="images/video.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==== End Main page====-->
+    <!--====About Me====-->
+<section id="about" class="about">
+    <div class="about__content">
+        <h3>About Me</h3>
+        <div class="about__slider container">
+            <span style="--i:1;"><img src="images/20220702_174338.jpg" alt=""></span>
+            <span style="--i:2;"><img src="images/20220721_191645.jpg" alt=""></span>
+            <span style="--i:3;"><img src="images/20220722_193340.jpg" alt=""></span>
+            <span style="--i:4;"><img src="images/20220815_175424.jpg" alt=""></span>
+            <span style="--i:5;"><img src="images/20220817_171654.jpg" alt=""></span>
+            <span style="--i:6;"><img src="images/20220817_185840.jpg" alt=""></span>
+            <span style="--i:7;"><img src="images/20220818_180812.jpg" alt=""></span>
+            <span style="--i:8;"><img src="images/20220819_172636.jpg" alt=""></span>
+        </div>
+    </div>
+</section>
+
+    <!--====End About Me====-->
+    <!--====Portfolio====-->
+    <section id="project" class="project">
+        <h3 class="project__title">Project</h3>
+        <div class="container">
+            <div class="slider">
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-js-hw11/">
+                        <img class="slider_items" src="images/image_search.jpg" alt="Image 1">
+                        <div class="slider__description">Image search app</div>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-js-hw-10/">
+                        <img class="slider_items" src="images/country_information.jpg" alt="Image 2">
+                        <div class="slider__description">Country information app</div>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/team-project-icecream/">
+                        <img class="slider_items" src="images/ice_cream.png" alt="Image 3">
+                        <div class="slider__description">Website IceCream- team project </div>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <a href="https://lukaszciaston-coder.github.io/goit-markup-hw-08/">
+                        <img class="slider_items" src="images/web_studio.png" alt="Image 4">
+                        <div class="slider__description">Website - individual project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====End Portfolio=====-->
+    <!--====Contact====-->
+    <section id="contact" class="contact">
+        <div class="container contact_container">
+            <div class="column">
+                <form id="contactForm" action="https://formsubmit.co/2a58cc08f2a80f36bc95b6c2dac46f03" method="POST">
+                    <div class="label-input-group">
+                        <label for="name">Name:</label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="your name">
+                    </div>
+                    <div class="label-input-group">
+                        <label for="mail">E-mail:</label>
+                        <input 
+                        type="mail" 
+                        id="mail" 
+                        name="mail"
+                        placeholder="your mail">
+                    </div>
+                </div>
+                <div class="column">
+                <div class="label-input-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                     id="message" 
+                     name="message" 
+                     rows="5" 
+                     placeholder="your massage"></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Send</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--==== Main JS ====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true, // Add dots for navigation
+                appendDots: $('.slider'), // Append dots within the slider element
+                prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                nextArrow: '<button type="button" class="slick-next">Next</button>'
+            });
+        });
+    </script>
+
+    <script src="js/mobile.js"></script>
+</body>
+
+
+</html>
