@@ -1,71 +1,17 @@
 .about {
-    background: linear-gradient(to bottom, #141272, #00a78e);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
+    padding: 2rem;
+    background-color: #f9f9f9;
 
-
-.about__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 80px;
-    max-width: 600px;
-    color: var(--black-100);
-    font-family: 'Mynerve';
-    font-size: 24px;
-}
-.about__slider {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: rotate 30s linear infinite;
-}
-
-.about__slider span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
-}
-
-.about__slider span img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-    object-fit: cover;
-    transition: 2s;
-}
-
-.about__slider:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-.about__slider span:hover img {
-    border: 2px solid white;
-    box-shadow: 0 0 30px white;
-}
-
-@keyframes rotate {
-    0% {
-        transform: perspective(1000px) rotateY(0deg);
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #333;
+        font-family: 'Lobster', cursive;
     }
 
-    100% {
-        transform: perspective(1000px) rotateY(360deg);
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #555;
     }
 }

@@ -1,173 +1,76 @@
 .home {
-    background-color: #141272;
     position: relative;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    
-
-    @media (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-    }
-}
-.home__text{
-    margin-bottom: 20px;
-}
-.home__content {
-    max-width: 600px;
-    color: var(--black-100);
-    font-family: 'Mynerve';
-    text-align: center;
-}
-
-.home__content h3 {
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.home__content h3 span {
-    color: var(--main-color);
-}
-
-.home__content h1 {
-    font-size: 56px;
-    font-weight: 700;
-}
-
-.home__multiple {
-    position: relative;
-    text-align: center;
-    /* Dodana właściwość */
-}
-
-.social-media {
-    text-align: center;
-    /* Dodana właściwość */
-}
-
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #00a78e;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #00a78e;
-    text-decoration: none;
-    margin: 10px 15px 30px 0;
-    transition: .5s ease;
-}
-
-.social-media a:hover {
-    background: #00a78e;
-    color: white;
-    box-shadow: 0 0 20px #00a78e;
-}
-
-.home__animation {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: #646f87;
-    box-shadow: 0 0 20px #00a78e;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    /* Dodana właściwość */
-
-    @media (min-width: 768px) {
-        width: 400px;
-        height: 400px;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        inset: -10px 140px;
-        background: linear-gradient(315deg, #00a78e, #0fd408);
-        transition: 0.5s;
-        animation: animate 10s linear infinite;
-    }
-
-    &:hover::before {
-        inset: -20px 0px;
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        inset: 6px;
-        background: #141272;
-        border-radius: 50%;
-        z-index: 1;
-    }
-}
-
-.home__image {
-    position: absolute;
-    inset: 30px;
-    border: 2px solid #646f87;
-    z-index: 3;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #00a78e;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    cursor:pointer;
-   
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    padding: 2rem;
 
-    & img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: linear-gradient(to bottom, #00a78e, #141272);
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: 0.5s;
-        pointer-events: none;
-    }
-}
+    .home__content {
+        text-align: center;
+        z-index: 2;
 
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    background-color: #00a78e;
-    border-radius: 40px;
-    box-shadow: 0 0 10px #00a78e;
-    font-size: 16px;
-    color: azure;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: .5s ease;
-}
-
-.btn:hover {
-    background-color: #646f87;
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
     }
 
-    100% {
-        transform: rotate(360deg);
+    /* 3D rotating slider */
+    .about__slider {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+            -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 40px;
+                object-fit: cover;
+                transition: 2s;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        &:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+
+        span:hover img {
+            border: 2px solid white;
+            box-shadow: 0 0 30px white;
+        }
     }
-}
-@media (max-width: 768px) {
-    .btn {
-        margin-bottom: 20px;
-        
+
+    @keyframes rotate {
+        0% {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        100% {
+            transform: perspective(1000px) rotateY(360deg);
+        }
     }
 }
