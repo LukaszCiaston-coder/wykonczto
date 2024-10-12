@@ -16,62 +16,46 @@
     margin: 0 auto;
 }
 
-/* Slider styles */
+
 .slider {
     display: flex;
-    /* Flexbox dla slidera */
     justify-content: center;
-    /* Wyśrodkowanie slajdów */
 }
 
 .slider__item {
     display: flex;
-    /* Flexbox dla każdego slajdu */
     justify-content: center;
-    /* Wyśrodkowanie obrazu w slajdzie */
     align-items: center;
-    /* Wyśrodkowanie pionowe */
     margin: 0 1rem;
-    /* Marginesy po bokach */
     padding: 1rem;
-    /* Padding */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Cień */
     border-radius: 10px;
-    /* Zaokrąglone rogi */
     transition: transform 0.3s ease-in-out;
-    /* Efekt przejścia */
 }
 
 .slider_items {
     max-height: 50%;
-    /* Możesz zmienić tę wartość na odpowiednią dla Twojego projektu */
     max-width: 80%;
-    /* Zmniejszono maksymalną szerokość */
     border-radius: 10px;
-    /* Zaokrąglone rogi */
     cursor: pointer;
-    /* Kursor */
     display: block;
-    /* Aby obraz był elementem blokowym */
-    margin: auto;
-    /* Wyśrodkowanie obrazu w slajdzie */
+    margin: auto;  
 }
-/* Arrow styles */
+
 @keyframes moveArrow {
     0% {
         transform: translateY(-50%) translateX(0);
-        /* Początkowa pozycja */
+       
     }
 
     50% {
         transform: translateY(-50%) translateX(-5px);
-        /* Ruch w lewo */
+     
     }
 
     100% {
         transform: translateY(-50%) translateX(0);
-        /* Powrót do pozycji początkowej */
+        
     }
 }
 
@@ -87,11 +71,11 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* Wyśrodkowanie w pionie */
+    
     z-index: 1;
     cursor: pointer;
    
-    /* Dodanie animacji */
+    
 }
 
 .slick-prev {
@@ -102,14 +86,14 @@
     right: 50px;
 }
 
-/* Opcjonalne: animacja tylko przy najechaniu */
+
 .slick-prev:hover,
 .slick-next:hover {
     background-color: #00a78eee; 
     animation: moveArrow 0.6s ease-in-out infinite alternate;
 }
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -179,4 +163,41 @@ margin-top: 10px;
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+@media (max-width: 768px){
+    .slider_items {
+            
+            max-width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+
+                .slick-prev,
+                .slick-next {
+                    background-color: #e2e2e2;
+                    border: none;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    color: #333;
+                    font-size: 24px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+        
+                    z-index: 1;
+                    cursor: pointer;
+        
+        
+                }
+        
+                .slick-prev {
+                    left: 20px;
+                }
+        
+                .slick-next {
+                    right: 20px;
+                }
 }
