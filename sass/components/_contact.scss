@@ -25,16 +25,12 @@
 }
 .contact i {
   margin-right: 0.5rem;
-  /* Odstęp między ikoną a tekstem */
   transition: transform 0.3s;
-  /* Animacja na hover */
 }
 
 .contact i:hover {
   transform: scale(1.2);
-  /* Powiększenie ikony na hover */
   color: #00a78e;
-  /* Zmiana koloru na hover */
 }
 @keyframes fadeIn {
   from {
