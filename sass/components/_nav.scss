@@ -110,7 +110,7 @@
 @media (max-width: 768px) {
     .navbar-toggle {
         display: flex;
-        /* W wersji mobilnej będzie widoczny */
+        margin-right: 20px;
     }
 }
 .navbar-toggle span {
@@ -123,7 +123,7 @@
     position: relative;
 }
 
-.navbar-toggle span:first-child {
+.navbar-toggle.active span:first-child {
     display: none;
 }
 
