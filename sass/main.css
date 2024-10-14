@@ -567,6 +567,12 @@ a {
   color: #00a78e;
 }
 
+/* Styl dla ikony Facebooka */
+.contact .fab {
+  color: #3b5998;
+  /* Kolor Facebooka */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

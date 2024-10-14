@@ -4,7 +4,6 @@
   margin-bottom: 20px;
   animation: fadeIn 0.5s ease-in;
 
-
   h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -19,10 +18,10 @@
     a {
       color: #00a78e;
       text-decoration: none;
-      
     }
   }
 }
+
 .contact i {
   margin-right: 0.5rem;
   transition: transform 0.3s;
@@ -32,6 +31,13 @@
   transform: scale(1.2);
   color: #00a78e;
 }
+
+/* Styl dla ikony Facebooka */
+.contact .fab {
+  color: #3b5998;
+  /* Kolor Facebooka */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
