@@ -1,1 +1,1 @@
-https://lukaszciaston-coder.github.io/wykonczto/
+www.wykonczto-krakow.great-site.net
