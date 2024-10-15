@@ -13,13 +13,50 @@
 
   p {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
-
-    a {
-      color: #00a78e;
-      text-decoration: none;
-    }
+    margin-bottom: 1rem;
   }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  background-color: #00a78e;
+  padding: 17px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+.contact-details h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.contact a {
+  color: #00a78e;
+  text-decoration: none;
 }
 
 .contact i {
@@ -32,10 +69,8 @@
   color: #00a78e;
 }
 
-/* Styl dla ikony Facebooka */
-.contact .fab {
-  color: #3b5998;
-  /* Kolor Facebooka */
+.contact-icon:hover{
+  background-color: #444;
 }
 
 @keyframes fadeIn {
