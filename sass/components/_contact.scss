@@ -1,20 +1,40 @@
 .contact {
-  padding: 2rem;
-  background-color: #fff;
-  margin-bottom: 20px;
+  width: 100%;
+  /* Ustawia szerokość sekcji na pełną szerokość */
+  background-color: #e9e9e9;
+  
   animation: fadeIn 0.5s ease-in;
+}
 
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #444;
-    font-family: 'Lobster', cursive;
-  }
+.contact__content {
+  width: 100%;
+  /* Zapewnia, że zawartość zajmuje pełną szerokość */
+  max-width: 100%;
+  /* Uniemożliwia ograniczenie szerokości kontenera */
+}
+.contact__content h3{
+    font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+      font-family: 'Lobster', cursive;
+      margin-left: 30px;
+}
 
-  p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
+.contact__background {
+  width: 100%;
+  /* Ustawia pełną szerokość dla tła */
+  margin: 0;
+  /* Usuwa marginesy */
+  padding: 2rem;
+  /* Ustawia padding */
+  background-size: cover;
+  /* Dopasowuje obraz tła do całego obszaru */
+  background-position: center;
+  /* Ustawia obrazek w centrum */
+  background-repeat: no-repeat;
+  /* Zapobiega powtarzaniu obrazka */
+  position: relative;
+  /* Daje możliwość pozycjonowania elementów w tle */
 }
 
 .contact-grid {
@@ -28,7 +48,7 @@
   background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -69,7 +89,7 @@
   color: #00a78e;
 }
 
-.contact-icon:hover{
+.contact-icon:hover {
   background-color: #444;
 }
 
