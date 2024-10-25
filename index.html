@@ -69,10 +69,15 @@
     </nav>
     <!--==== Navbar End ====-->
     <!--==== Main page====-->
-    <section id="home" class="home">
-        <div class="home__content">
-           <h1>Wykończenia i remonty mieszkań w Krakowie</h1>   
-           <div class="about__slider container">
+<section id="home" class="home">
+    <video class="background-video" autoplay muted loop>
+        <source src="videos/background01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="glass-overlay"></div>
+    <div class="home__content">
+        <h1>Wykończenia i remonty mieszkań w Krakowie</h1>
+        <div class="about__slider container">
             <span style="--i:1;"><img src="images/001.png" alt=""></span>
             <span style="--i:2;"><img src="images/002.png" alt=""></span>
             <span style="--i:3;"><img src="images/003.png" alt=""></span>
@@ -86,8 +91,9 @@
             <span style="--i:11;"><img src="images/011.png" alt=""></span>
             <span style="--i:12;"><img src="images/012.png" alt=""></span>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
+
     <!--==== End Main page====-->
     <!--====About Me====-->
 <section id="about" class="about">
@@ -107,60 +113,68 @@
 </section>
 
     <!--====End About Me====-->
-<!--====Usługi====-->
-<section id="usługi" class="usługi">
+    <!--==== Services ====-->
+<section id="usługi" class="service">
     <h3>Nasze Usługi</h3>
-    <div class="usługi__container">
-        <!-- Installation Services -->
-        <div class="usługa__card">
-            <img src="images/inst.jpeg" alt="Installation Services">
-            <div class="usługa__details">
-                <h4>Instalacyjne</h4>
-                <p>Oferujemy usługi instalacyjne dostosowane do potrzeb klienta.</p>
-                <ul>
-                    <li>Instalacje elektryczne</li>
-                    <li>Instalacje hydrauliczne</li>
-                    <li>Instalacje gazowe</li>
-                </ul>
+    <div class="service__container">
+        <!-- Karta Usług Instalacyjnych -->
+        <div class="service__card" onclick="toggleCard(this)">
+            <div class="service__content">
+                <div class="service__half top">
+                    <img src="images/inst.jpeg" alt="Usługi Instalacyjne">
+                    <h4>Instalacyjne</h4>
+                </div>
+                <div class="service__half bottom">
+                    <p>Oferujemy usługi instalacyjne:</p>
+                    <ul>
+                        <li>Instalacje elektryczne</li>
+                        <li>Instalacje hydrauliczne</li>
+                        <li>Instalacje gazowe</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <!-- Construction Services -->
-        <div class="usługa__card">
-            <img src="images/bud.jpg" alt="Construction Services">
-            <div class="usługa__details">
-                <h4>Budowlane</h4>
-                <p>Kompleksowe usługi budowlane:</p>
-                <ul>
-                    <li>Burzenie ścian</li>
-                    <li>Budowa ścian działowych</li>
-                    <li>Tynkowanie i gładzenie ścian</li>
-                    <li>Malowanie ścian</li>
-                    <li>Zabudowa z płyt karton-gips</li>
-                    <li>Układanie płytek</li>
-                    <li>Wylewki</li>
-                </ul>
+        <!-- Karta Usług Budowlanych -->
+        <div class="service__card" onclick="toggleCard(this)">
+            <div class="service__content">
+                <div class="service__half top">
+                    <img src="images/bud.jpg" alt="Usługi Budowlane">
+                    <h4>Budowlane</h4>
+                </div>
+                <div class="service__half bottom">
+                    <p>Kompleksowe usługi budowlane:</p>
+                    <ul>
+                        <li>Burzenie ścian</li>
+                        <li>Budowa ścian działowych</li>
+                        <li>Tynkowanie i gładzenie ścian</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <!-- Assembly Services -->
-        <div class="usługa__card">
-            <img src="images/mont.jpg" alt="Assembly Services">
-            <div class="usługa__details">
-                <h4>Monterskie</h4>
-                <p>Usługi montażowe:</p>
-                <ul>
-                    <li>Montaż paneli</li>
-                    <li>Montaż mebli</li>
-                    <li>Montaż drzwi</li>
-                    <li>Modernizacja wnętrz</li>
-                </ul>
+        <!-- Karta Usług Monterskich -->
+        <div class="service__card" onclick="toggleCard(this)">
+            <div class="service__content">
+                <div class="service__half top">
+                    <img src="images/mont.jpg" alt="Usługi Monterskie">
+                    <h4>Monterskie</h4>
+                </div>
+                <div class="service__half bottom">
+                    <p>Usługi montażowe:</p>
+                    <ul>
+                        <li>Montaż paneli</li>
+                        <li>Montaż mebli</li>
+                        <li>Montaż drzwi</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!--===End Usługi===-->
+
+<!--===End Services===-->
 <!--====Portfolio====-->
 <section id="project" class="project">
     <h3 class="project__title">Realizacje</h3>
@@ -240,6 +254,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/card.js"></script>
 
 <script>
     $(document).ready(function () {
