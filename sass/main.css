@@ -699,12 +699,12 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 7px;
 }
 
 .service__card {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 430px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -747,7 +747,7 @@ a {
   transform: rotateY(180deg);
 }
 
-.service__half img {
+.service__half .categories {
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -785,6 +785,25 @@ a {
     max-width: 400px;
   }
 }
+.icon {
+  color: white;
+  margin-right: 4px;
+}
+
+.position {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.position li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.position li .icon {
+  margin-right: 10px;
+}
+
 .free-quote {
   background-color: #f9f9f9;
   border: 2px solid #00a78e;
