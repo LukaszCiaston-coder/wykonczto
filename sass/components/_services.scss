@@ -63,7 +63,6 @@
 
 .bottom {
     background-color: #444;;
-
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: rotateY(180deg);
@@ -88,7 +87,6 @@
 }
 .service__half.bottom p {
     font-size: 1.5rem;
-    
     margin-bottom: 0.5rem;
     background-color: #00a78e;
     border-radius: 10px;
@@ -104,17 +102,39 @@
         flex-direction: column;
         align-items: center;
     }
+.service__half ul li {
+    font-size: 1rem;
 
+}
     .service__card {
         width: 100%;
         max-width: 400px;
+    }
+    .icon{
+        height: 16px;
+        width: 16px;
+    }
+}
+
+@keyframes fold {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
     }
 }
 
 .icon {
     color: white;
     margin-right: 4px;
-    
+    animation: fold 3s linear infinite;
+    display: inline-block;
 }
  .position {
     list-style-position: inside;
