@@ -258,7 +258,6 @@
 <section id="contact" class="contact">
     <div class="contact__content">
         <h3><i class="fas fa-address-book"></i> Kontakt</h3>
-        <!-- Obrazek tła dodany bezpośrednio w HTML -->
         <div class="contact__background"
             style="background-image: url('./images/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 2rem; width: 100%; margin: 0; position: relative;">
             <div class="contact-grid">
@@ -310,7 +309,7 @@
 <script>
     $(document).ready(function () {
         $('.slider').slick({
-            dots: false, // Remove dots for navigation
+            dots: false, 
             prevArrow: '<button type="button" class="slick-prev">←</button>',
             nextArrow: '<button type="button" class="slick-next">→</button>'
         });
@@ -329,7 +328,7 @@
             "images/t001.jpg": ["images/t002.jpg", "images/t003.jpg", "images/t004.jpg"]
         };
 
-        $('.slider_items').click(function () {
+        $('.slider__img').click(function () {
             modal.css("display", "block");
             const fullImage = $(this).data('full'); // Get the full image URL from data attribute
             modalImg.attr('src', fullImage);
