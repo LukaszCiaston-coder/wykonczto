@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.wykonczto-krakow.great-site.net/</loc>
-    <lastmod>2024-10-14T17:50:05+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://www.wykonczto-krakow.great-site.net/index.html</loc>
-    <lastmod>2024-10-14T17:50:05+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.wykonczto-krakow.great-site.net/uslugi</loc>
-    <lastmod>2024-11-18T12:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.wykonczto-krakow.great-site.net/kontakt</loc>
-    <lastmod>2024-11-18T12:00:00+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.wykonczto-krakow.pl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <!-- Dodaj inne strony -->
 </urlset>
