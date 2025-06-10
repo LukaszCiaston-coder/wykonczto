@@ -1,1 +1,1 @@
-www.wykonczto-krakow.great-site.net
+www.wykonczto-krakow.pl
